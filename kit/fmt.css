@@ -1,0 +1,117 @@
+/* fmt.css —— 三种视频类型的专用镜头和常驻元素。颜色全部用 vpro 的主题变量（--vp-*），五套画面风格都能套。 */
+.fx-t{position:absolute;white-space:nowrap}
+.fx-card{background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);box-shadow:0 0 0 2.5px var(--vp-line),0 7px 0 2.5px color-mix(in srgb,var(--vp-lo) 80%,#000),0 30px 60px rgba(4,5,24,.55)}
+
+/* ---------- 常驻：新闻顶栏 + 滚动快讯 ---------- */
+.fx-nbar{position:absolute;left:40px;right:40px;top:44px;height:78px;display:flex;align-items:center;gap:20px;z-index:60}
+.fx-nbar b{padding:10px 26px 8px;border-radius:10px;background:var(--vp-accent);color:#fff;font:40px Shu,sans-serif;letter-spacing:4px;box-shadow:0 5px 0 var(--vp-lo)}
+.fx-nbar span{font:600 36px Mi,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:3px;opacity:.9;text-shadow:0 2px 8px rgba(0,0,0,.6)}
+.fx-nbar i{margin-left:auto;display:flex;gap:8px}
+.fx-nbar u{width:42px;height:8px;border-radius:4px;background:rgba(255,255,255,.22)}
+.fx-nbar u.d{background:color-mix(in srgb,var(--vp-accent) 55%,transparent)}
+.fx-nbar u.on{background:var(--vp-accent);box-shadow:0 0 12px var(--vp-accent)}
+.fx-nbar em{font:400 60px/1 Num,'Bebas Neue',sans-serif;font-style:normal;color:var(--fx-on,var(--vp-ink));letter-spacing:2px}
+.fx-nbar em small{font-size:.55em;opacity:.6}
+.fx-tick{position:absolute;left:0;top:1452px;width:1080px;height:84px;display:flex;align-items:stretch;z-index:60;background:linear-gradient(180deg,var(--vp-card1),var(--vp-card2));box-shadow:0 -3px 0 var(--vp-accent)}
+.fx-tick b{flex:0 0 auto;display:flex;align-items:center;padding:0 24px;background:var(--vp-accent);color:#fff;font:34px Shu,sans-serif;letter-spacing:3px}
+.fx-tick .w{flex:1;overflow:hidden;position:relative}
+.fx-tick .r{position:absolute;left:0;top:0;height:84px;display:flex;align-items:center;white-space:nowrap;font:500 34px Mi,sans-serif;color:var(--vp-ink);letter-spacing:1px;padding-left:20px}
+
+/* ---------- 常驻：榜单右侧名次栏 ---------- */
+.fx-rail{position:absolute;right:26px;top:0;width:110px;height:1574px;z-index:60}
+.fx-rail .ln{position:absolute;left:53px;width:4px;background:rgba(255,255,255,.18);border-radius:2px}
+.fx-rail .sl{position:absolute;left:20px;width:70px;height:70px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 46px/1 Num,'Bebas Neue',sans-serif;padding-top:4px;color:var(--vp-ink);background:var(--vp-card2);box-shadow:0 0 0 3px rgba(255,255,255,.3)}
+.fx-rail .sl.d{opacity:.55}
+.fx-rail .sl.on{background:var(--vp-accent);color:#fff;box-shadow:0 0 0 4px var(--vp-hi),0 0 30px var(--vp-accent)}
+.fx-rail .nm{position:absolute;right:104px;font:500 26px Mi,sans-serif;color:var(--fx-on,var(--vp-ink));opacity:.6;white-space:nowrap;text-shadow:0 2px 6px rgba(0,0,0,.7)}
+
+/* ---------- 常驻：科普章节导航 ---------- */
+.fx-nav{position:absolute;left:40px;top:44px;display:flex;gap:10px;z-index:60}
+.fx-nav .tb{position:relative;height:76px;border-radius:12px;display:flex;align-items:center;gap:12px;padding:0 16px;overflow:hidden;background:color-mix(in srgb,var(--vp-card2) 85%,transparent);box-shadow:inset 0 0 0 2px rgba(255,255,255,.14);color:var(--vp-ink)}
+.fx-nav .tb b{flex:0 0 auto;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:700 26px Mi,sans-serif;background:rgba(255,255,255,.12)}
+.fx-nav .tb span{font:600 28px Mi,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;opacity:.7}
+.fx-nav .tb.d b{background:color-mix(in srgb,var(--vp-accent) 60%,transparent)}
+.fx-nav .tb.on{background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));box-shadow:inset 0 0 0 3px var(--vp-accent)}
+.fx-nav .tb.on b{background:var(--vp-accent);color:#fff}
+.fx-nav .tb.on span{opacity:1}
+.fx-nav .tb i{position:absolute;left:0;bottom:0;height:5px;background:var(--vp-accent)}
+
+/* ---------- 新闻 ---------- */
+.fx-date{position:absolute;left:60px;top:190px;font:400 150px/1 Num,'Bebas Neue',Shu,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:4px;text-shadow:0 8px 0 var(--vp-lo),0 20px 40px rgba(0,0,0,.5)}
+.fx-kick{position:absolute;left:66px;top:360px;padding:8px 26px 6px;border-radius:10px;background:var(--vp-accent);color:#fff;font:52px Shu,sans-serif;letter-spacing:8px}
+.fx-pv{position:absolute;left:60px;width:960px;height:96px;border-radius:18px;display:flex;align-items:center;gap:22px;padding:0 26px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);box-shadow:0 0 0 2px var(--vp-line),0 14px 30px rgba(0,0,0,.45)}
+.fx-pv b{font:400 58px/1 Num,'Bebas Neue',sans-serif;color:var(--vp-hi);padding-top:6px}
+.fx-pv span{font:600 40px Mi,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fx-no{position:absolute;left:44px;top:150px;font:400 150px/1 Num,'Bebas Neue',sans-serif;color:transparent;-webkit-text-stroke:3px var(--vp-hi);opacity:.9}
+.fx-src{position:absolute;left:240px;top:200px;padding:8px 22px 6px;border-radius:999px;border:2.5px solid var(--vp-hi);color:var(--vp-hi);font:600 34px Mi,sans-serif;letter-spacing:2px;white-space:nowrap}
+.fx-hl{position:absolute;left:60px;width:970px;font:96px/1.12 Shu,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:2px;white-space:nowrap;text-shadow:0 5px 0 rgba(0,0,0,.35),0 14px 30px rgba(0,0,0,.5)}
+.fx-hl em,.fx-cmt em,.fx-point em,.fx-take em,.fx-chk em{font-style:normal;color:var(--vp-hi)}
+.fx-win{position:absolute;left:60px;width:960px;border-radius:26px;overflow:hidden;box-shadow:0 0 0 4px var(--vp-ink),0 30px 60px rgba(0,0,0,.6)}
+.fx-win img{width:100%;height:100%;object-fit:cover;display:block}
+.fx-read{position:absolute;left:60px;display:flex;align-items:center;gap:26px;padding:16px 40px 16px 34px;border-radius:24px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));box-shadow:0 0 0 3px var(--vp-line),0 8px 0 3px color-mix(in srgb,var(--vp-lo) 80%,#000),0 30px 60px rgba(0,0,0,.55);transform-origin:0 100%}
+.fx-read b{font:400 150px/1 Num,'Bebas Neue',sans-serif;color:var(--vp-hi);padding-top:10px;white-space:nowrap}
+.fx-read span{display:flex;flex-direction:column;gap:4px}
+.fx-read i{font:600 54px Shu,sans-serif;font-style:normal;color:var(--vp-ink)}
+.fx-read u{text-decoration:none;font:500 32px Mi,sans-serif;color:var(--vp-ink);opacity:.7;white-space:nowrap}
+.fx-big{position:absolute;left:0;width:1080px;display:flex;flex-direction:column;align-items:center;transform-origin:50% 40%}
+.fx-big b{position:static!important;width:auto!important;left:auto!important;font-size:330px!important;line-height:1!important}
+.fx-big span{display:flex;align-items:baseline;gap:18px;margin-top:-6px;font:600 44px Mi,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:3px;opacity:.9;white-space:nowrap}
+.fx-big span i{font:64px Shu,sans-serif;font-style:normal;color:var(--vp-hi)}
+.fx-cmt{position:absolute;right:50px;top:1170px;max-width:900px;display:flex;align-items:center;gap:18px;padding:14px 32px 14px 16px;border-radius:16px;background:var(--vp-accent);color:#fff;font:56px Shu,sans-serif;letter-spacing:2px;white-space:nowrap;box-shadow:0 6px 0 var(--vp-lo),0 20px 40px rgba(0,0,0,.5);transform-origin:90% 50%}
+.fx-cmt b{font:700 30px Mi,sans-serif;padding:8px 14px;border-radius:10px;background:rgba(0,0,0,.25);letter-spacing:4px}
+.fx-cmt em{color:#fff;text-decoration:underline;text-underline-offset:8px}
+.fx-chk{position:absolute;left:60px;width:960px;height:108px;border-radius:20px;display:flex;align-items:center;gap:24px;padding:0 30px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);box-shadow:0 0 0 2px var(--vp-line),0 16px 34px rgba(0,0,0,.45)}
+.fx-chk i{flex:0 0 auto;width:62px;height:62px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--vp-accent);color:#fff;font:700 36px Mi,sans-serif;font-style:normal}
+.fx-chk span{font:600 44px Mi,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.fx-take{position:absolute;left:0;width:1080px;text-align:center;font:110px/1.1 Shu,sans-serif;color:var(--vp-hi);letter-spacing:4px;-webkit-text-stroke:6px color-mix(in srgb,var(--vp-lo) 70%,#000);paint-order:stroke fill;text-shadow:0 10px 0 color-mix(in srgb,var(--vp-lo) 70%,#000),0 24px 40px rgba(0,0,0,.5);white-space:nowrap}
+
+/* ---------- 榜单 ---------- */
+.fx-top{position:absolute;left:0;top:220px;width:1080px;display:flex;align-items:flex-end;justify-content:center;gap:20px;transform-origin:50% 60%}
+.fx-top span{font:400 170px/1 Num,'Bebas Neue',sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:10px;padding-bottom:60px}
+.fx-top b{font:400 520px/1 Num,'Bebas Neue',sans-serif;font-weight:400;left:auto!important;text-align:left!important}
+.fx-metric{position:absolute;left:0;width:1080px;top:1120px;text-align:center;font:600 46px Mi,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:4px;opacity:.85}
+.fx-rk{position:absolute!important;left:40px!important;top:130px;width:auto!important;font-size:560px!important;text-align:left!important;transform-origin:20% 60%}
+.fx-rk small{font-size:.4em;vertical-align:.9em;margin-right:.04em}
+.fx-rays{position:absolute;left:-300px;top:-200px;width:1100px;height:1100px;border-radius:50%;background:repeating-conic-gradient(from 0deg,color-mix(in srgb,var(--vp-accent) 45%,transparent) 0 6deg,transparent 6deg 18deg);-webkit-mask-image:radial-gradient(circle,#000 20%,transparent 70%);mask-image:radial-gradient(circle,#000 20%,transparent 70%)}
+.fx-rname{position:absolute;top:700px;font-family:Shu,sans-serif;color:var(--fx-on,var(--vp-ink));letter-spacing:3px;white-space:nowrap;text-shadow:0 6px 0 rgba(0,0,0,.35),0 16px 34px rgba(0,0,0,.5)}
+.fx-rsub{position:absolute;top:850px;font:600 40px Mi,sans-serif;color:var(--vp-hi);letter-spacing:3px;white-space:nowrap}
+.fx-disc{position:absolute;left:60px;top:640px;width:320px;height:320px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 8px var(--vp-ink),0 0 0 16px var(--vp-accent),0 30px 50px rgba(0,0,0,.55)}
+.fx-disc img{width:100%;height:100%;object-fit:cover}
+.fx-bar{position:absolute;left:60px;top:1000px;width:860px;height:110px}
+.fx-bar i{position:absolute;left:0;top:20px;height:70px;border-radius:12px;background:linear-gradient(180deg,var(--vp-hi),var(--vp-accent) 60%,var(--vp-lo));box-shadow:inset 0 3px 0 rgba(255,255,255,.5),0 14px 30px rgba(0,0,0,.45)}
+.fx-bar b{position:absolute;top:0;font:400 110px/1 Num,'Bebas Neue',sans-serif;font-weight:400;color:var(--fx-on,var(--vp-ink));white-space:nowrap;text-shadow:0 4px 12px rgba(0,0,0,.6)}
+.fx-bar b small{font:600 38px Mi,sans-serif;margin-left:8px}
+.fx-fb{position:absolute;left:60px;width:840px;height:100px;display:flex;align-items:center;gap:16px}
+.fx-fb span{flex:0 0 64px;height:64px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 44px/1 Num,'Bebas Neue',sans-serif;padding-top:4px;background:var(--vp-card1);color:var(--vp-ink);box-shadow:0 0 0 2px var(--vp-line)}
+.fx-fb b{flex:0 0 220px;font:44px Shu,sans-serif;font-weight:400;color:var(--fx-on,var(--vp-ink));white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-shadow:0 3px 10px rgba(0,0,0,.6)}
+.fx-fb i{height:54px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.55),rgba(255,255,255,.25));flex:0 0 auto}
+.fx-fb em{font:400 58px/1 Num,'Bebas Neue',sans-serif;font-style:normal;color:var(--fx-on,var(--vp-ink));white-space:nowrap;padding-top:6px}
+.fx-fb em small{font:600 26px Mi,sans-serif;margin-left:4px}
+.fx-fb.one span{background:var(--vp-accent);color:#fff;box-shadow:0 0 0 3px var(--vp-hi)}
+.fx-fb.one i{background:linear-gradient(180deg,var(--vp-hi),var(--vp-accent) 60%,var(--vp-lo))}
+.fx-fb.one em,.fx-fb.one b{color:var(--vp-hi)}
+
+/* ---------- 科普 ---------- */
+.fx-chap{position:absolute;left:60px;width:820px;height:100px;border-radius:18px;display:flex;align-items:center;gap:22px;padding:0 26px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);box-shadow:0 0 0 2px var(--vp-line),0 14px 30px rgba(0,0,0,.45)}
+.fx-chap b{width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--vp-accent);color:#fff;font:700 34px Mi,sans-serif}
+.fx-chap span{font:600 44px Mi,sans-serif}
+.fx-step{position:absolute;left:60px;top:200px;display:flex;flex-direction:column;gap:6px}
+.fx-step b{font:700 34px Mont,Montserrat,sans-serif;letter-spacing:.3em;color:var(--vp-hi)}
+.fx-step span{font:92px/1.1 Shu,sans-serif;color:var(--fx-on,var(--vp-ink));white-space:nowrap;text-shadow:0 5px 0 rgba(0,0,0,.35),0 14px 30px rgba(0,0,0,.5)}
+.fx-node{position:absolute;left:110px;width:860px;height:150px;border-radius:24px;display:flex;align-items:center;gap:26px;padding:0 34px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);font:60px Shu,sans-serif;letter-spacing:2px;white-space:nowrap;box-shadow:0 0 0 3px var(--vp-line),0 7px 0 3px color-mix(in srgb,var(--vp-lo) 80%,#000),0 24px 50px rgba(0,0,0,.5);transform-origin:20% 50%}
+.fx-node i{flex:0 0 auto;width:76px;height:76px;border-radius:50%;display:flex;align-items:center;justify-content:center;font:400 52px/1 Num,'Bebas Neue',sans-serif;font-style:normal;padding-top:4px;background:rgba(255,255,255,.1);color:var(--vp-hi)}
+.fx-node.last{box-shadow:0 0 0 4px var(--vp-accent),0 7px 0 4px var(--vp-lo),0 0 40px color-mix(in srgb,var(--vp-accent) 50%,transparent)}
+.fx-node.last i{background:var(--vp-accent);color:#fff}
+.fx-node em{font-style:normal;color:var(--vp-hi)}
+.fx-arrow{position:absolute;left:530px;width:10px;border-radius:5px;background:linear-gradient(180deg,var(--vp-hi),var(--vp-accent))}
+.fx-arrow::after{content:'';position:absolute;left:-14px;bottom:-16px;border:19px solid transparent;border-top:22px solid var(--vp-accent)}
+.fx-ana{position:absolute;left:90px;width:900px;min-height:230px;border-radius:30px;display:flex;flex-direction:column;justify-content:center;gap:10px;padding:26px 40px;background:linear-gradient(165deg,var(--vp-card1),var(--vp-card2));color:var(--vp-ink);font:72px/1.15 Shu,sans-serif;letter-spacing:2px;box-shadow:0 0 0 3px var(--vp-line),0 8px 0 3px color-mix(in srgb,var(--vp-lo) 80%,#000),0 30px 60px rgba(0,0,0,.55)}
+.fx-ana u{text-decoration:none;font:700 32px Mi,sans-serif;letter-spacing:6px;color:var(--vp-hi)}
+.fx-ana.b{box-shadow:0 0 0 4px var(--vp-accent),0 8px 0 4px var(--vp-lo),0 30px 60px rgba(0,0,0,.55)}
+.fx-ana em{font-style:normal;color:var(--vp-hi)}
+.fx-eq{position:absolute;left:460px;top:640px;width:160px;height:160px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:var(--vp-accent);color:#fff;font:700 110px/1 Mi,sans-serif;box-shadow:0 0 0 8px var(--vp-card2),0 0 0 11px var(--vp-line),0 20px 40px rgba(0,0,0,.5);z-index:3}
+.fx-point{position:absolute;left:60px;width:960px;padding:26px 36px;border-radius:22px;background:var(--vp-accent);color:#fff;font:58px/1.25 Shu,sans-serif;letter-spacing:2px;box-shadow:0 7px 0 var(--vp-lo),0 26px 50px rgba(0,0,0,.5);transform-origin:50% 50%}
+.fx-point{text-wrap:balance}
+.fx-point.big{font-size:84px;padding:44px 48px;top:820px!important}
+.fx-ghost{position:absolute;left:0;width:1080px;top:300px;text-align:center;font:400 620px/1 Num,'Bebas Neue',sans-serif;color:transparent;-webkit-text-stroke:5px color-mix(in srgb,var(--vp-hi) 55%,transparent)}
+.fx-point em{color:#fff;text-decoration:underline;text-underline-offset:10px}

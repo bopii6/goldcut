@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>金剪 goldcut</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23e3b45c'/%3E%3Cpath d='M10 9l12 14M22 9L10 23' stroke='%231a1206' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+<script>try{const t=localStorage.getItem('gc-theme');if(t)document.documentElement.dataset.theme=t;}catch{}</script>
+<link rel="stylesheet" href="/app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="#/">
+      <span class="mark"><svg class="icon" viewBox="0 0 24 24" style="width:18px;height:18px;stroke-width:2.4"><circle cx="6" cy="18" r="2.6"/><circle cx="18" cy="18" r="2.6"/><path d="M7.8 16.2 17 4M16.2 16.2 7 4"/></svg></span>
+      <span><b>金剪</b><small>GOLDCUT</small></span>
+    </a>
+    <nav class="nav">
+      <a href="#/" data-nav="new"><svg class="icon" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg>新建</a>
+      <a href="#/library" data-nav="library"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="9" rx="1.5"/><rect x="14" y="3" width="7" height="5" rx="1.5"/><rect x="14" y="12" width="7" height="9" rx="1.5"/><rect x="3" y="16" width="7" height="5" rx="1.5"/></svg>作品<span class="cnt" id="navCount"></span></a>
+      <a href="#/settings" data-nav="settings"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>设置</a>
+    </nav>
+    <div class="grow"></div>
+    <div class="foot">
+      <div class="row" id="apiState"><span class="dot"></span><span>检查中…</span></div>
+      <div class="row" id="busyState" hidden><span class="dot run"></span><span></span></div>
+      <div class="row"><span id="monthCost">本月花费 ¥0.00</span><button class="themebtn" id="themeBtn" style="margin-left:auto" title="切换深浅色">◐</button></div>
+    </div>
+  </aside>
+  <main id="view"></main>
+</div>
+<div class="toast" id="toast"></div>
+<script src="/app.js"></script>
+</body>
+</html>

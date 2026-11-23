@@ -17,3 +17,6 @@ sheets/
 *.wav
 
 fonts/
+# goldcut app 的产物
+films/
+music/

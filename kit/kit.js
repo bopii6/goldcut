@@ -293,7 +293,7 @@ async function use(F){
  let VOCAB;
  async function vocab(){
   if(VOCAB!==undefined)return VOCAB;
-  const urls=[...document.scripts].map(s=>s.src).filter(s=>/\/(stage25d|film_base|moves|kit|scenes|scenes_plus|host|vert|vpro)\.js(\?.*)?$/.test(s));
+  const urls=[...document.scripts].map(s=>s.src).filter(s=>/\/(stage25d|film_base|moves|kit|scenes|scenes_plus|host|vert|vpro|fmt)\.js(\?.*)?$/.test(s));   // fmt：goldcut app 的三种视频类型
   try{const set=new Set();for(const u of urls){const t=await (await fetch(u)).text();for(const m of t.matchAll(/[A-Za-z_$][\w$]*/g))set.add(m[0]);}VOCAB=urls.length>=2&&set.size>500?set:null;}
   catch{VOCAB=null;}   // 双击直接打开（file://）读不到源码：这一项不查
   return VOCAB;

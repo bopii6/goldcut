@@ -1,10 +1,13 @@
 {
-  "name": "wallstreet-explainer",
-  "version": "1.0.0",
-  "description": "Claude Code skill: Wall-Street-style finance/tech explainer videos — renderer and news snapshot tools",
+  "name": "goldcut",
+  "version": "3.0.0",
+  "description": "金剪 goldcut：给一个话题，DeepSeek 联网调研写稿，自动渲染财经/科技解读竖屏短片",
   "private": true,
   "type": "module",
   "scripts": {
+    "start": "node app/server.mjs",
+    "make": "node app/cli.mjs",
+    "demo": "node app/cli.mjs 离线示例 --plan app/samples/demo.json",
     "setup": "npx playwright install chromium"
   },
   "dependencies": {

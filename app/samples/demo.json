@@ -1,0 +1,27 @@
+{
+ "_note": "离线测试用的示例计划（格式和 DeepSeek 返回的一样，数字是示意，不是真实数据）。故意留了几处小错误（错的时刻、多余参数），用来测校正。node app/cli.mjs 测试 --plan app/samples/demo.json",
+ "plan": {
+  "title": "示例：黄金为什么涨",
+  "oneLiner": "利率预期一变，黄金就先动",
+  "accent": "#d9a441",
+  "pattern": "gold",
+  "lines": [
+   {"id": "b01", "text": "今年黄金涨了快百分之三十。"},
+   {"id": "b02", "text": "可它不生利息，凭什么这么贵？"},
+   {"id": "b03", "text": "先看谁在买：央行和散户都在抢。"},
+   {"id": "b04", "text": "三年里，央行每年买进一千吨上下。"},
+   {"id": "b05", "text": "再看利率：降息预期一起，持有黄金就不吃亏了。"},
+   {"id": "b06", "text": "所以说到底，是利率在定价黄金。"},
+   {"id": "b07", "text": "下次看金价，先看一眼利率。"}
+  ],
+  "shots": [
+   {"scene": "vp-number", "cover": ["b01"], "says": "今年黄金涨了快三成", "value": "+30%", "label": "今年金价涨幅（示意）", "at": "@b01:涨了"},
+   {"scene": "vp-ask", "cover": ["b02"], "says": "抛出反常：不生利息却很贵", "lines": ["不生利息", "凭什么贵"], "extra_param": "多余参数", "at": ["@b02", "@b02:凭什么"]},
+   {"scene": "vp-versus", "cover": ["b03"], "says": "两类买家都在买", "left": {"name": "央行", "value": "增持", "at": "@b03:央行"}, "right": {"name": "散户", "value": "抢购", "at": "@b03:散户"}, "title": "谁在<em>买</em>"},
+   {"scene": "vp-bars", "cover": ["b04"], "says": "央行连续三年大买", "unit": "吨（示意）", "items": [{"label": "第一年", "value": 1080, "at": "@b04:三年"}, {"label": "第二年", "value": 1040}, {"label": "第三年", "value": 1000, "hl": true, "at": "@b04:一千吨"}]},
+   {"scene": "vp-chain", "cover": ["b05"], "says": "利率怎么传到金价", "title": "一环扣一环", "items": [{"title": "降息预期", "at": "@b05:降息"}, {"title": "持有成本变低", "at": "@b05:不存在的词"}, {"title": "金价上涨", "value": "+30%"}]},
+   {"scene": "vp-verdict", "cover": ["b06"], "says": "答案：利率", "hero": true, "lines": ["说到底", "是利率"], "at": ["@b06", "@b06:利率"], "en": "INTEREST RATE"},
+   {"scene": "vp-words", "cover": ["b07"], "says": "带走一句话", "words": [{"text": "先看", "at": "@b07:先看", "col": "white"}, {"text": "利率", "at": "@b07:利率", "col": "accent"}]}
+  ]
+ }
+}

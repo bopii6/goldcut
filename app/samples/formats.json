@@ -1,0 +1,38 @@
+{
+ "_note": "三种视频类型的离线示例内容（数字是示意，不是真实数据）。node app/cli.mjs 示例 --sample news|rank|explain",
+ "news": {
+  "title": "今日科技早报", "oneLiner": "芯片、汽车、AI 三条线都在动", "accent": "#e5483b",
+  "kicker": "早报", "date": "11月23日",
+  "intro": "今天三件事，第一件就跟你的钱包有关。",
+  "items": [
+   {"headline": "某芯片公司单季营收<em>翻倍</em>", "short": "芯片营收翻倍", "source": "示例财经", "say": "第一件，某芯片公司单季营收直接翻倍。", "value": "1158", "unit": "亿美元", "label": "单季营收", "sayNum": "一个季度就收了1158亿美元。", "comment": "钱都流向了算力", "sayComment": "说白了，钱都流向了算力。", "img": null},
+   {"headline": "新能源车月销量再创新高", "short": "新能源车新高", "source": "示例汽车", "say": "第二件，新能源车月销量又破纪录了。", "value": "+32%", "unit": "", "label": "同比增长", "sayNum": "同比涨了32%。", "comment": "价格战还没完", "sayComment": "但价格战还远没打完。", "img": null},
+   {"headline": "大模型价格再降一半", "short": "大模型降价", "source": "示例科技", "say": "第三件，大模型调用价格又砍了一半。", "value": "-50%", "unit": "", "label": "调用价格", "sayNum": "直接便宜了50%。", "comment": "便宜才是护城河", "sayComment": "在这个行业，便宜才是护城河。", "img": null}
+  ],
+  "outro": "三件事一句话：算力赚钱，应用拼价。", "takeaway": "算力赚钱，应用拼价"
+ },
+ "rank": {
+  "title": "最赚钱的五家公司", "oneLiner": "前五名里科技公司占了四个", "accent": "#e0a23a",
+  "listTitle": "最赚钱的公司", "metric": "按年度净利润（示意）", "unit": "亿美元",
+  "intro": "全世界最赚钱的五家公司，第一名你肯定猜得到。",
+  "items": [
+   {"rank": 5, "name": "公司E", "sub": "金融", "value": 620, "say": "第五名，公司E。", "comment": "利息躺赚", "sayComment": "靠利差，躺着赚钱。", "img": null},
+   {"rank": 4, "name": "公司D", "sub": "科技", "value": 880, "say": "第四名，公司D。", "comment": "广告机器", "sayComment": "一台印钞的广告机器。", "img": null},
+   {"rank": 3, "name": "公司C", "sub": "科技", "value": 950, "say": "第三名，公司C。", "comment": "云服务撑腰", "sayComment": "背后是云服务在撑腰。", "img": null},
+   {"rank": 2, "name": "公司B", "sub": "芯片", "value": 1200, "say": "第二名，公司B。", "comment": "卖铲子的人", "sayComment": "淘金热里，卖铲子的最赚。", "img": null},
+   {"rank": 1, "name": "公司A", "sub": "能源", "value": 1600, "say": "第一名，还是公司A。", "comment": "地下就是钱", "sayComment": "地底下挖出来的就是钱。", "img": null}
+  ],
+  "outro": "五家里四家是科技，时代变了。", "takeaway": "利润往科技走"
+ },
+ "explain": {
+  "title": "降息为什么能救市", "oneLiner": "降息就是让借钱变便宜", "accent": "#3fa9f5",
+  "question": "降息为什么能救市",
+  "intro": "央行一降息，股市就涨，到底为什么？",
+  "steps": [
+   {"title": "借钱变便宜", "kind": "flow", "nodes": ["央行降利率", "银行降贷款利率", "企业借钱更便宜"], "point": "钱的<em>价格</em>下来了", "say": ["第一步，央行把利率降下来。", "银行跟着降，企业借钱就更便宜。"]},
+   {"title": "存钱不划算", "kind": "analogy", "a": "存款利息变低", "b": "存钱罐会漏钱", "point": "钱会从银行<em>跑出来</em>", "say": ["第二步，存钱的利息也变少了。", "就像存钱罐会漏，钱自然要往外跑。"]},
+   {"title": "钱涌进市场", "kind": "point", "point": "便宜的钱推高<em>资产价格</em>", "say": ["第三步，跑出来的钱要找地方去。", "股票、房子，价格就被推上去了。"]}
+  ],
+  "outro": "所以降息救市，本质是让钱动起来。", "summary": ["借钱变便宜", "存钱不划算", "钱涌进市场"], "takeaway": "让钱动起来"
+ }
+}
